@@ -1,0 +1,65 @@
+/*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}*/
+.container{
+    width: 1140px;
+    margin: auto;
+/*nav sec css start*/   
+}
+nav{
+    background-color: aquamarine;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    color:blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px;
+    color: black;
+    transition:all 0.3s linear;
+    }
+nav ul li ul{
+      position: absolute;      
+      background-color: cornflowerblue;
+      left: 0;
+      top: 110%;
+      display: block;
+      opacity: 0;
+      visibility:hidden;
+      transition: all 0.5s linear;
+}
+nav ul li:hover >ul{
+    opacity: 1;
+    visibility: visible;
+    top:100%
+}
+nav ul li ul li ul{
+    left:100%;
+    top: 0;
+}
+nav ul li ul li:hover ul{
+    top: 0;
+
+}
+      
+H1{
+    background-color: aqua;
+}
+nav ul li :hover>a{
+    background-color: bisque;
+}
